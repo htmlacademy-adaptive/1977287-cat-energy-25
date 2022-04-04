@@ -10,62 +10,57 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="#" alt="Логотип Cat Energy">
+      <img class="main-header__logo-image" src="img/header/logo-mobile.png" width="33" height="38"
+        alt="Логотип Cat Energy">
+      <img class="main-header__logo-image-cat-energy" src="img/header/logo2.png" width="101" height="18"
+        alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="main-container">
     <section class="functional-food-header">
-      <div class="functional-food__wrapper">
-        <h1 class="functional-food__title">Функциональное
+      <div class="functional-food-header__wrapper">
+        <h1 class="functional-food-header__title">Функциональное
           питание для котов</h1>
-        <p class="functional-food__slogan">Занялся собой? Займись котом!</p>
+        <p class="functional-food-header__slogan">Занялся собой? Займись котом!</p>
       </div>
-      <div class="functional-food__button button-wrapper">
-        <a class="button button--hover button-pressed" href="form.html">Подобрать программу</a>
-      </div>
+      <a class="button button--hover button-pressed" href="form.html">Подобрать программу</a>
     </section>
     <div class="options">
-      <div class="options__loose-weight-wrapper loose-weight">
+      <div class="options__program-wrapper program program--loose-weight">
         <h2 class="options__title">Похудение</h2>
         <p class="options__description">Ваш кот весит больше собаки и почти утратил способность
           лазить по деревьям? Пора на диету! Cat Energy Slim поможет
           вашему питомцу сбросить лишний вес.</p>
-        <div class="options__catalog-reference-wrapper catalog-reference">
-          <a class="catalog-reference__catalog-slim" href="#">Каталог Slim</a>
-        </div>
+        <a class="catalog-reference" href="#">Каталог Slim</a>
       </div>
-      <div class="options__gain-weight-wrapper gain-weight">
+      <div class="options__program-wrapper program program--gain-weight">
         <h2 class="options__title">Набор массы</h2>
         <p class="options__description">
           Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!</p>
-        <div class="options__catalog-reference-wrapper catalog-reference">
-          <a class="catalog-reference__catalog-pro" href="#">Каталог Pro</a>
-        </div>
+        <a class="catalog-reference" href="#">Каталог Pro</a>
       </div>
     </div>
     <section class="advantages">
@@ -104,23 +99,23 @@
             без изнуряющих тренировок! При этом он не менял своих
             привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="result-kilograms-wrapper">
-            <b class="result-kilograms-wrapper__kilograms">5 КГ</b>
-            <span class="result-kilograms-wrapper__weight-decrease">снижение веса</span>
+            <b class="result-kilograms-wrapper__kilos-days">5 КГ</b>
+            <span class="result-kilograms-wrapper__weight-time">снижение веса</span>
           </div>
           <div class="result-time-wrapper">
-            <b class="result-time-wrapper__days">60 ДНЕЙ</b>
-            <span class="result-time-wrapper__time-consume">затрачено времени</span>
+            <b class="result-time-wrapper__kilos-days">60 ДНЕЙ</b>
+            <span class="result-time-wrapper__weight-time">затрачено времени</span>
           </div>
-          <div class="result-expenses-wrapper">
-            <span class="result-expenses-wrapper__food-expenses">Затраты на питание: </span>
-            <span class="result-expenses-wrapper__food-price">15 000 РУБ.</span>
+          <div class="result-price-wrapper">
+            <span class="result-price-wrapper__food-price">Затраты на питание: </span>
+            <span class="result-price-wrapper__food-price">15 000 РУБ.</span>
           </div>
         </div>
         <div class="cat-slider">
           <span class="cat-slider__initial">Было</span>
           <div class="cat-slider__slider-scale">
             <div class="cat-slider__slider-bar" style="width: 213px">
-              <button class="cat-slider__slider-toggle slider-toggle--pressed" type="button">
+              <button class="cat-slider__slider-toggle slider-toggle slider-toggle--pressed" type="button">
               </button>
             </div>
           </div>
@@ -140,15 +135,18 @@
     </section>
     <section class="map">
       <div class="map__wrapper">
+        <img class="map__image" src="img/map/map-mobile.jpg" width="320" height="362"
+        alt="Как нас найти">
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo footer-logo">
-        <a class="footer-logo__link" href="index.html">Cat Energy</a>
-      </div>
+      <a class="main-footer__link" href="index.html">
+        <img class="main-footer__logo-image-cat-energy" src="img/header/logo2.png" width="101" height="18"
+        alt="Логотип Cat Energy">
+      </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -162,11 +160,17 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+      <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="">HTML Academy</span>
+      <svg class="main-footer-logo" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
+          fill="#666" />
+      </svg>
+    </a>
     </div>
   </footer>
 </body>
+
 
 </html>
