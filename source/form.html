@@ -45,13 +45,13 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post" name="program-choice">
           <fieldset class="filter-inputs">
             <label class="filter-inputs__input-label"> ИМЯ:*
-              <input class="filter-inputs__field" type="text" name="name" value="Барсик">
+              <input class="filter-inputs__field" type="text" name="name" value="Барсик" required>
             </label>
             <label class="filter-inputs__input-label">Вес (кг):*
-              <input class="filter-inputs__field" type="text" name="weight" value="7">
+              <input class="filter-inputs__field" type="number" name="weight" value="7" required>
             </label>
             <label class="filter-inputs__input-label">Возраст (лет):
-              <input class="filter-inputs__field" type="text" name="age" value="7">
+              <input class="filter-inputs__field" type="number" name="age" value="7">
             </label>
           </fieldset>
           <fieldset class="filter-radio">
@@ -83,10 +83,10 @@
           <fieldset class="owner-contacts">
             <legend class="owner-contacts__legend">Контактные данные (владельца кота)</legend>
             <label class="owner-contacts__input-label"> E-mail:*
-              <input class="owner-contacts__field" type="email" name="e-mail" value="кuklachev@gmail.com">
+              <input class="owner-contacts__field" type="email" name="e-mail" value="кuklachev@gmail.com" required>
             </label>
             <label class="owner-contacts__input-label">Телефон:*
-              <input class="owner-contacts__field" type="tel" name="tel" value="8 (960) 900-60-90">
+              <input class="owner-contacts__field" type="tel" name="tel" value="8 (960) 900-60-90" required>
             </label>
           </fieldset>
           <fieldset class="comments">
@@ -158,17 +158,20 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+              target="_blank">Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              target="_blank">Youtube</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Telegram</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">Telegram</a>
           </li>
         </ul>
       </div>
-      <a class="main-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+      <a class="main-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
+        Academy
         <span class="">HTML Academy</span>
         <svg class="main-footer__main-footer-logo" aria-hidden="true" focusable="false" width="27" height="34"
           viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
