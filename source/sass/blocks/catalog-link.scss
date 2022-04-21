@@ -1,0 +1,15 @@
+@import "./blocks/variables.scss";
+
+.catalog-link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-link--pressed:active {
+  color: $special-grey;
+}

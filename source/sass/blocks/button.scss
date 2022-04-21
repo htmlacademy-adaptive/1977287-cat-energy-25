@@ -1,0 +1,36 @@
+@import "./blocks/variables.scss";
+
+.button {
+  color: $white;
+  background-color: $basic-green;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--hover:hover {
+  background-color: $basic-green2;
+}
+
+.button-pressed:active {
+  color: $basic-green;
+  background-color: $basic-green2;
+}
+
+.button--order {
+  display: inline-block;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button--form {
+  border: none;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 20px;
+}

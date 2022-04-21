@@ -1,0 +1,13 @@
+@import "./blocks/variables.scss";
+
+.gift {
+  color: $white;
+  background-image: url("/source/img/catalog/gift-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic-green;
+}

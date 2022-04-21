@@ -1,0 +1,28 @@
+@import "./blocks/variables.scss";
+
+.comments {
+  border: none;
+  margin-bottom: 23px;
+}
+
+.comments__legend {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
+
+.comments__field {
+  color: $special-dark-grey2;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  resize: none;
+  overflow: hidden;
+  width: 280px;
+  height: 150px;
+  border: 1px solid $basic-grey;
+  padding: 9px 15px;
+}

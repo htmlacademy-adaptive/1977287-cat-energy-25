@@ -1,0 +1,25 @@
+@import "./blocks/variables.scss";
+
+.filter-inputs {
+  border: none;
+}
+
+.filter-inputs__input-label {
+  color: $special-dark-grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-inputs__field {
+  color: $special-dark-grey;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 15px 13px;
+  outline: none;
+  border: 1px solid $basic-grey;
+}

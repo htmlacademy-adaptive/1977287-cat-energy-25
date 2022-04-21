@@ -1,0 +1,26 @@
+@import "./blocks/variables.scss";
+
+.show-all-button {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.show-all-button--hover:hover {
+  background-color: $special-grey2;
+}
+
+.show-all-button--pressed:active {
+  color: $special-grey;
+  background-color: $special-grey2;
+}

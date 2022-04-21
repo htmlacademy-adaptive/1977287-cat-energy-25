@@ -1,0 +1,15 @@
+@import "./blocks/variables.scss";
+
+.filter-radio {
+  border: none;
+}
+
+.filter-radio__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-radio__item {
+  margin-bottom: 19px;
+}

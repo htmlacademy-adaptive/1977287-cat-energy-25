@@ -1,0 +1,11 @@
+@import "./blocks/variables.scss";
+
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link--hover:hover path {
+  fill: $basic-green;
+}

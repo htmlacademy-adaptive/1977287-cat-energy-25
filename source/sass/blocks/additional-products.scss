@@ -1,0 +1,43 @@
+@import "./blocks/variables.scss";
+
+.additional-products {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.additional-products__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 36px;
+}
+
+.additional-products__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-products__item-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.additional-products__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.additional-products__item-feature {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
