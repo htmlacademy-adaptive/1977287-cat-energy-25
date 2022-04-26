@@ -1,31 +1,25 @@
-@import "./blocks/variables.scss";
-
-.program {
-  background-color: $basic-grey;
-  padding-top: 30px;
-  padding-right: 33px;
-  padding-left: 20px;
-  padding-bottom: 18px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
 
 .options__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+.options__title--margin {
   margin: 0;
   margin-bottom: 30px;
 }
 
 .options__description {
   color: $special-dark-grey;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.options__description--margin {
   margin: 0;
   margin-bottom: 42px;
 }

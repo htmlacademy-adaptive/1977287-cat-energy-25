@@ -1,26 +1,38 @@
-@import "./blocks/variables.scss";
 
-.catalog {
+.catalog--margin {
   margin-right: 20px;
   margin-left: 20px;
 }
 
 .catalog__title {
-  margin: 0;
-  margin-top: 27px;
-  margin-bottom: 50px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
+.catalog__title--margin {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 50px;
+}
+
 .catalog__list {
   list-style-type: none;
+}
+
+.catalog__list--margin {
   margin: 0;
+}
+
+.catalog__list--padding {
   padding: 0;
 }
 
-.catalog__catalog-item-wrappper {
+.catalog__catalog-item-wrappper--margin {
+  margin-bottom: 20px;
+}
+
+.catalog__item--margin {
   margin-bottom: 20px;
 }
 
@@ -34,7 +46,7 @@
 
 .catalog__item-feature {
   color: $special-dark-grey;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;

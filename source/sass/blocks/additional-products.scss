@@ -1,6 +1,5 @@
-@import "./blocks/variables.scss";
 
-.additional-products {
+.additional-products--margin {
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -9,6 +8,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+}
+
+.additional-products__title--margin {
   margin: 0;
   margin-top: 25px;
   margin-bottom: 36px;
@@ -16,11 +18,17 @@
 
 .additional-products__list {
   list-style-type: none;
+}
+
+.additional-products__list--margin {
   margin: 0;
+}
+
+.additional-products__list--padding {
   padding: 0;
 }
 
-.additional-products__item-wrapper {
+.additional-products__item-wrapper--margin {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -31,12 +39,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.additional-products__item-title--margin {
   margin: 0;
   margin-bottom: 13px;
 }
 
 .additional-products__item-feature {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;

@@ -1,7 +1,10 @@
-@import "./blocks/variables.scss";
 
 .comments {
   border: none;
+  margin-bottom: 23px;
+}
+
+.comments--margin {
   margin-bottom: 23px;
 }
 
@@ -9,12 +12,15 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+}
+
+.comments__legend--margin {
   margin-bottom: 38px;
 }
 
 .comments__field {
   color: $special-dark-grey2;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -24,5 +30,8 @@
   width: 280px;
   height: 150px;
   border: 1px solid $basic-grey;
+}
+
+.comments__field--padding {
   padding: 9px 15px;
 }

@@ -1,60 +1,19 @@
-@import "./blocks/variables.scss";
 
 .example {
-  padding-right: 20px;
-  padding-left: 20px;
   background-color: $special-grey2;
+}
+
+.example--padding {
+  padding: 25px 20px;
 }
 
 .example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+}
+
+.example__title--margin {
   margin: 0;
-  padding-top: 25px;
   margin-bottom: 40px;
-}
-
-.result__description {
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special-dark-grey2;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.result-wrapper__kilos-days {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.result-wrapper__weight-time-price {
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.result-wrapper__weight-time-price--price {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.cat-slider {
-  margin-top: 15px;
-  padding-bottom: 40px;
-}
-
-.cat-slider__initial-final {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }

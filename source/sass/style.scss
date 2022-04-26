@@ -1,13 +1,16 @@
 // Начните писать стили здесь
 
 @import "./blocks/fonts.scss";
-@import "./blocks/body.scss";
 @import "./blocks/variables.scss";
+@import "./blocks/page-body.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/banner.scss";
 @import "./blocks/options.scss";
+@import "./blocks/program.scss";
+@import "./blocks/result.scss";
+@import "./blocks/cat-slider.scss";
 @import "./blocks/catalog-link.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
@@ -17,7 +20,6 @@
 @import "./blocks/button.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/show-more-items.scss";
-@import "./blocks/show-all-button.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/gift.scss";
 @import "./blocks/filter.scss";
@@ -29,4 +31,3 @@
 @import "./blocks/extra-products.scss";
 @import "./blocks/checkbox-control.scss";
 @import "./blocks/required-fields.scss";
-

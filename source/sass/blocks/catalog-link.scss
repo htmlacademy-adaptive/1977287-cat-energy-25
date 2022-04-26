@@ -1,4 +1,4 @@
-@import "./blocks/variables.scss";
+
 
 .catalog-link {
   text-decoration: none;
@@ -10,6 +10,6 @@
   text-transform: uppercase;
 }
 
-.catalog-link--pressed:active {
+.catalog-link:active {
   color: $special-grey;
 }

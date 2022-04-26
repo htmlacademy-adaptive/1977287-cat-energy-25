@@ -1,4 +1,3 @@
-@import "./blocks/variables.scss";
 
 .social__list {
   list-style-type: none;
@@ -6,6 +5,14 @@
   padding: 0;
 }
 
-.social-link--hover:hover path {
+.social__vk-icon:hover path {
+  fill: $basic-green;
+}
+
+.social__youtube-icon:hover path {
+  fill: $basic-green;
+}
+
+.social__telegram-icon:hover path {
   fill: $basic-green;
 }
