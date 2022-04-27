@@ -17,7 +17,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list site-list--margin site-list--padding">
+      <ul class="main-nav__list site-list site-list--margin">
         <li class="site-list__item site-list__item--current">
           <a class="site-list__site-link" href="index.html">
             Главная
@@ -38,25 +38,25 @@
   </header>
   <main class="main-form">
     <section class="filter filter--margin">
-      <h1 class="filter__title filter__title--margin">Подбор программы</h1>
+      <h1 class="filter__title">Подбор программы</h1>
       <p class="filter__subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <div class="filter__wrapper">
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post" name="program-choice">
           <fieldset class="filter-inputs">
             <label class="filter-inputs__input-label"> ИМЯ:*
-              <input class="filter-inputs__field filter-inputs__field--padding" type="text" name="name" value="Барсик" required>
+              <input class="filter-inputs__field" type="text" name="name" value="Барсик" required>
             </label>
             <label class="filter-inputs__input-label">Вес (кг):*
-              <input class="filter-inputs__field filter-inputs__field--padding" type="number" name="weight" value="7" required>
+              <input class="filter-inputs__field" type="number" name="weight" value="7" required>
             </label>
             <label class="filter-inputs__input-label">Возраст (лет):
-              <input class="filter-inputs__field filter-inputs__field--padding" type="number" name="age" value="7">
+              <input class="filter-inputs__field" type="number" name="age" value="7">
             </label>
           </fieldset>
           <fieldset class="filter-radio">
-            <ul class="filter-radio__list filter-radio__list--margin filter-radio__list--padding">
-              <li class="filter-radio__item filter-radio__item--margin">
+            <ul class="filter-radio__list">
+              <li class="filter-radio__item">
                 <label class="filter-radio__radio-label control">
                   <input class="visually-hidden control__field" type="radio" name="program-choice" value="weight-loss"
                     checked>
@@ -64,14 +64,14 @@
                   <span class="control__label">Похудение</span>
                 </label>
               </li>
-              <li class="filter-radio__item filter-radio__item--margin">
+              <li class="filter-radio__item">
                 <label class="filter-radio__radio-label control">
                   <input class="visually-hidden control__field" type="radio" name="program-choice" value="gain-weight">
                   <span class="control__mark"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
-              <li class="filter-radio__item filter-radio__item--margin">
+              <li class="filter-radio__item">
                 <label class="filter-radio__radio-label control">
                   <input class="visually-hidden control__field" type="radio" name="program-choice" value="need-advice">
                   <span class="control__mark"></span>
@@ -81,43 +81,43 @@
             </ul>
           </fieldset>
           <fieldset class="owner-contacts">
-            <legend class="owner-contacts__legend owner-contacts__legend--margin">Контактные данные (владельца кота)</legend>
+            <legend class="owner-contacts__legend">Контактные данные (владельца кота)</legend>
             <label class="owner-contacts__input-label"> E-mail:*
-              <input class="owner-contacts__field owner-contacts__field--padding" type="email" name="e-mail" value="kuklachev@gmail.com" required>
+              <input class="owner-contacts__field" type="email" name="e-mail" value="kuklachev@gmail.com" required>
             </label>
             <label class="owner-contacts__input-label">Телефон:*
-              <input class="owner-contacts__field owner-contacts__field--padding" type="tel" name="tel" value="8 (960) 900-60-90" required>
+              <input class="owner-contacts__field" type="tel" name="tel" value="8 (960) 900-60-90" required>
             </label>
           </fieldset>
           <fieldset class="comments comments--margin">
-            <legend class="comments__legend comments__legend--margin">Комментарий</legend>
-            <textarea class="comments__field comments__field--padding" name="comments">Расскажите обо всех повадках кота</textarea>
+            <legend class="comments__legend">Комментарий</legend>
+            <textarea class="comments__field" name="comments">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="extra-products">
-            <legend class="extra-products__legend extra-products__legend--margin">Дополнительно</legend>
-            <ul class="extra-products__list extra-products__list--margin extra-products__list--padding">
-              <li class="extra-products__item extra-products-item--margin">
+            <legend class="extra-products__legend">Дополнительно</legend>
+            <ul class="extra-products__list">
+              <li class="extra-products__item">
                 <label class="extra-products__label checkbox-control">
                   <input class="visually-hidden checkbox-control__input" type="checkbox" name="sweetener" checked>
                   <span class="checkbox-control__mark"></span>
                   <span class="checkbox-control__label">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="extra-products__item extra-products-item--margin">
+              <li class="extra-products__item">
                 <label class="extra-products__label checkbox-control">
                   <input class="visually-hidden checkbox-control__input" type="checkbox" name="water">
                   <span class="checkbox-control__mark"></span>
                   <span class="checkbox-control__label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="extra-products__item extra-products-item--margin">
-                <label class="extra-products__label checkbox__control">
+              <li class="extra-products__item">
+                <label class="extra-products__label checkbox-control">
                   <input class="visually-hidden checkbox-control__input" type="checkbox" name="milk">
                   <span class="checkbox-control__mark"></span>
                   <span class="checkbox-control__label">Молоко</span>
                 </label>
               </li>
-              <li class="extra-products__item extra-products-item--margin">
+              <li class="extra-products__item">
                 <label class="extra-products__label checkbox-control">
                   <input class="visually-hidden checkbox-control__input" type="checkbox" name="vitamins">
                   <span class="checkbox-control__mark"></span>
@@ -135,7 +135,7 @@
     </section>
     <section class="contacts contacts--margin">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title contacts__title--margin">Приглашаем
+        <h2 class="contacts__title">Приглашаем
           к сотрудничеству
           дилеров!</h2>
         <span class="contacts__adress-street">ул. Большая
@@ -149,7 +149,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer main-footer--padding">
+  <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="index.html">
         <img class="main-footer__logo-image-big" src="img/footer/footer-logo-cat-energy-big.png" width="128" height="24"
