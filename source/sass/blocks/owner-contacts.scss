@@ -1,0 +1,33 @@
+
+.owner-contacts {
+  border: none;
+}
+
+.owner-contacts__legend {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 26px;
+  margin-bottom: 35px;
+}
+
+.owner-contacts__input-label {
+  color: $special-dark-grey2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.owner-contacts__field {
+  color: $special-dark-grey2;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid $basic-grey;
+  width: 220px;
+  padding: 15px 13px;
+}

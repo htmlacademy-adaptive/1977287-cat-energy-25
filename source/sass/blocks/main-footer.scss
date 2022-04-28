@@ -1,0 +1,25 @@
+
+.main-footer {
+  background-color: $special-grey2;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.main-footer__copyright-link {
+  text-decoration: none;
+  color: $special-dark-grey;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-footer__copyright:active {
+  color: $special-grey;
+}
+
+.main-footer__main-footer-logo:hover path {
+  fill: $basic-green;
+}
