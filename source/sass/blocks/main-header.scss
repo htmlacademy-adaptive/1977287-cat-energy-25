@@ -1,8 +1,36 @@
-.main-header--margin {
-  margin-right: 20px;
-  margin-left: 20px;
+
+.main-header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 17px;
 }
 
 .main-header__logo {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding-top: 25px;
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__logo-image {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding-top: 25px;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__logo-image {
+    padding-right: 20px;
+  }
 }

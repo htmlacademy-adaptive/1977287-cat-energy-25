@@ -2,7 +2,7 @@
 .banner {
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("/source/img/index/index-background.jpg");
-  background-size: 100% 302px, 100% auto;
+  background-size: 320px 302px, 320px 302px;
   background-repeat: no-repeat, no-repeat;
   color: $white;
 }
@@ -15,6 +15,7 @@
   display: block;
   z-index: -1;
   position: absolute;
+  right: 1px;
 }
 
 .banner__title {
@@ -41,4 +42,57 @@
   width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    color: $black;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner::before {
+    display: none;
+  }
+
+  .banner__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-left: 89px;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .banner__slogan {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 89px;
+  }
+
+  .banner__button {
+    display: inline-block;
+    width: 245px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner::before {
+    content: "";
+    background-color: $basic-green;
+    width: 720px;
+    height: 694px;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -600px;
+  }
 }

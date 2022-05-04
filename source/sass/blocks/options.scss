@@ -17,3 +17,41 @@
   margin: 0;
   margin-bottom: 42px;
 }
+
+@media (min-width: $tablet-width) {
+  .options__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .options__description {
+    color: $special-dark-grey;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .options--margin {
+    margin-top: 140px;
+  }
+
+  .options__title {
+    text-align: center;
+  }
+
+  .options__description {
+    max-width: 450px;
+  }
+}

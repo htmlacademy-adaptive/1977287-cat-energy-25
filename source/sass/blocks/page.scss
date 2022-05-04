@@ -1,0 +1,33 @@
+
+.page__body {
+  background-color: $white;
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.page__container {
+  width: 280px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__container {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__container {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}

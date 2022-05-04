@@ -8,6 +8,90 @@
 
 .program--margin {
   margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+}
+
+.program--slim::before {
+  content: "";
+  background-image: url("/source/img/index/slim-cat-icon.png");
+  width: 50px;
+  height: 53px;
+  display: block;
+}
+
+.program--pro::before {
+  content: "";
+  background-image: url("/source/img/index/pro-cat-icon.png");
+  width: 67px;
+  height: 50px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    background-color: $basic-grey;
+    padding-top: 77px;
+    padding-right: 62px;
+    padding-left: 52px;
+    padding-bottom: 53px;
+  }
+
+  .program--slim::before {
+    display: none;
+  }
+
+  .program--pro::before {
+    display: none;
+  }
+
+  .program--slim::after {
+    content: "";
+    background-image: url("/source/img/index/slim-cat-icon-tablet.png");
+    width: 200px;
+    height: 211px;
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: 700px;
+  }
+
+  .program--pro::after {
+    content: "";
+    background-image: url("/source/img/index/pro-cat-icon-tablet.png");
+    width: 268px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: 1100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 470px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .program--slim::after {
+    content: "";
+    background-image: url("/source/img/index/slim-cat-icon-desktop.png");
+    width: 100px;
+    height: 106px;
+    display: block;
+    position: absolute;
+    right: 550px;
+    top: 800px;
+  }
+
+  .program--pro::after {
+    content: "";
+    background-image: url("/source/img/index/pro-cat-icon-desktop.png");
+    width: 134px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: 810px;
+  }
 }
