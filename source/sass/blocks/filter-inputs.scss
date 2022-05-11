@@ -1,6 +1,8 @@
 
 .filter-inputs {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-inputs__input-label {
@@ -9,6 +11,10 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
 }
 
 .filter-inputs__field {
@@ -22,6 +28,19 @@
   border: 1px solid $basic-grey;
   padding: 15px 13px;
 }
+
+.filter-inputs__field--name {
+  width: 200px;
+}
+
+.filter-inputs__field--weight {
+  width: 163px;
+}
+
+.filter-inputs__field--age {
+  width: 142px;
+}
+
 
 .filter-inputs::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

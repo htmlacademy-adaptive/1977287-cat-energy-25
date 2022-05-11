@@ -1,3 +1,15 @@
+.show-more-items {
+  position: relative;
+}
+
+.show-more-items::before {
+  content: "";
+  background-image: url("/source/img/catalog/plus.svg");
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+}
 
 .show-more-items__title {
   font-weight: 400;
@@ -13,4 +25,16 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more-items {
+    width: 320px;
+    height: 429px;
+    border: 1px solid $special-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }

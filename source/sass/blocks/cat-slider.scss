@@ -1,5 +1,27 @@
 .cat-slider {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cat-slider__slider-toggle {
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $basic-green;
+  border: none;
+  position: absolute;
+  top: 7px;
+  left: 98px;
+}
+
+.cat-slider__slider-bar {
+  width: 86px;
+  height: 10px;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  background-color: $white;
 }
 
 .cat-slider--margin {
@@ -11,6 +33,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +53,8 @@
     border-radius: 50%;
     border: 1px solid $special-grey;
     background-color: $white;
+    top: 0;
+    left: 330px;
   }
 
   .cat-slider__initial-final {
@@ -43,5 +68,9 @@
 @media (min-width: $desktop-width) {
   .cat-slider {
     justify-content: right;
+  }
+
+  .cat-slider__slider-toggle {
+    left: 900px;
   }
 }

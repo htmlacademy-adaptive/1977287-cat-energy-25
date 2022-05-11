@@ -6,8 +6,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  min-width: 320px;
   width: 100%;
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -20,7 +20,6 @@
   .page__container {
     width: 708px;
     padding: 0 30px;
-    margin: 0 auto;
   }
 }
 
@@ -28,6 +27,5 @@
   .page__container {
     width: 1220px;
     padding: 0 110px;
-    margin: 0 auto;
   }
 }

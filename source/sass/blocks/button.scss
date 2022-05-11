@@ -51,3 +51,9 @@
   color: $special-grey;
   background-color: $special-grey2;
 }
+
+@media (min-width: $tablet-width) {
+  .button--tablet {
+    width: 632px;
+  }
+}

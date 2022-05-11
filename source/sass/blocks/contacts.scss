@@ -6,9 +6,18 @@
   line-height: 20px;
 }
 
+.contacts__wrapper {
+  display: flex;
+}
+
+
 .contacts--margin {
   margin-top: 26px;
   margin-bottom: 26px;
+}
+
+.contacts--catalog {
+  background-color: $basic-grey;
 }
 
 .contacts__title {

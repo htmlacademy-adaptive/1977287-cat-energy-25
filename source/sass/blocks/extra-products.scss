@@ -2,6 +2,9 @@
 
 .extra-products {
   border: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .extra-products__legend {
@@ -17,6 +20,6 @@
   padding: 0;
 }
 
-.extra-products-item {
+.extra-products__item {
   margin-bottom: 20px;
 }

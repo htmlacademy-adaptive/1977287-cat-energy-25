@@ -4,6 +4,7 @@
   padding-right: 30px;
   padding-left: 20px;
   padding-bottom: 18px;
+  position: relative;
 }
 
 .program--margin {
@@ -16,6 +17,7 @@
   width: 50px;
   height: 53px;
   display: block;
+  position: absolute;
 }
 
 .program--pro::before {
@@ -24,15 +26,65 @@
   width: 67px;
   height: 50px;
   display: block;
+  position: absolute;
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.program__description {
+  color: $special-dark-grey;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.program__description::after {
+  content: "";
+  border-bottom: 1px solid $special-grey;
+  width: 240px;
+  display: block;
+  position: absolute;
+  top: 210px;
 }
 
 @media (min-width: $tablet-width) {
   .program {
-    background-color: $basic-grey;
     padding-top: 77px;
     padding-right: 62px;
     padding-left: 52px;
     padding-bottom: 53px;
+  }
+
+  .program__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .program__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 320px;
+  }
+
+  .program__description::after {
+    display: none;
   }
 
   .program--slim::before {
@@ -50,8 +102,8 @@
     height: 211px;
     display: block;
     position: absolute;
-    right: -100px;
-    top: 700px;
+    top: 70px;
+    left: 450px;
   }
 
   .program--pro::after {
@@ -61,8 +113,8 @@
     height: 200px;
     display: block;
     position: absolute;
-    right: -150px;
-    top: 1100px;
+    left: 400px;
+    top: 100px;
   }
 }
 
@@ -73,6 +125,14 @@
     padding-left: 50px;
   }
 
+  .program__title {
+    text-align: center;
+  }
+
+  .program__description {
+    max-width: 450px;
+  }
+
   .program--slim::after {
     content: "";
     background-image: url("/source/img/index/slim-cat-icon-desktop.png");
@@ -80,8 +140,8 @@
     height: 106px;
     display: block;
     position: absolute;
-    right: 550px;
-    top: 800px;
+    left: 50px;
+    top: 30px;
   }
 
   .program--pro::after {
@@ -91,7 +151,7 @@
     height: 100px;
     display: block;
     position: absolute;
-    right: -100px;
-    top: 810px;
+    left: 30px;
+    top: 30px;
   }
 }

@@ -1,12 +1,23 @@
 
 .main-header {
-  display: flex;
   padding-top: 10px;
   padding-bottom: 17px;
 }
 
+.main-header__logo-wrap {
+  display: flex;
+}
+
 .main-header__logo {
   text-decoration: none;
+}
+
+.main-header__logo-small {
+  margin: 0 auto;
+}
+
+.main-header__logo-image-small {
+  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {

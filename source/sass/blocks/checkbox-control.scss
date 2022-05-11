@@ -4,4 +4,30 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-left: 41px;
+}
+
+.checkbox-control__mark {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: $white;
+  border: 1px solid $special-grey;
+}
+
+.checkbox-control__input[type="checkbox"]:checked + .checkbox-control__mark::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-image: url("/source/img/form/checked-mark.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 14px;
 }

@@ -1,5 +1,6 @@
 
 .banner {
+  position: relative;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("/source/img/index/index-background.jpg");
   background-size: 320px 302px, 320px 302px;
@@ -15,7 +16,7 @@
   display: block;
   z-index: -1;
   position: absolute;
-  right: 1px;
+  right: 0;
 }
 
 .banner__title {
@@ -92,7 +93,7 @@
     display: block;
     z-index: -1;
     position: absolute;
-    top: 0;
-    right: -600px;
+    top: -120px;
+    right: -50px;
   }
 }
