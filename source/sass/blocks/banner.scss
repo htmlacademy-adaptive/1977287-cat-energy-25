@@ -6,6 +6,12 @@
   background-size: 320px 302px, 320px 302px;
   background-repeat: no-repeat, no-repeat;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/source/img/index/index-background2x.jpg");
+    background-size: 640px 604px, 640px 604px;
+  }
 }
 
 .banner::before {
@@ -38,11 +44,9 @@
   margin-bottom: 30px;
 }
 
-.banner__button {
-  display: inline-block;
-  width: 280px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.banner__button-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,10 +55,17 @@
     background: none;
     display: flex;
     flex-direction: column;
+    padding: 0 117px;
   }
 
   .banner::before {
     display: none;
+  }
+
+  .banner__image {
+    position: absolute;
+    z-index: -1;
+    left: 50px;
   }
 
   .banner__title {
@@ -62,7 +73,7 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    margin-left: 89px;
+    margin-bottom: 40px;
     max-width: 600px;
     text-align: left;
   }
@@ -72,7 +83,6 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-left: 89px;
   }
 
   .banner__button {
@@ -82,18 +92,55 @@
     padding-bottom: 14px;
     margin-left: 85px;
   }
+
+  .banner__button-wrap {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .banner::before {
     content: "";
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/source/img/index/index-background-desktop.png");
+    background-size: 720px 694px, 720px 694px;
+    background-repeat: no-repeat, no-repeat;
     background-color: $basic-green;
     width: 720px;
     height: 694px;
     display: block;
     z-index: -1;
     position: absolute;
-    top: -120px;
-    right: -50px;
+    top: -108px;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("/source/img/index/index-background-desktop2x.jpg");
+      background-size: 1440px 1388px, 1440px 1388px;
+    }
+  }
+
+
+  .banner__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 115px 20px 0 72px;
+    max-width: 450px;
+  }
+
+  .banner__slogan {
+    padding-left: 72px;
+    margin-bottom: 52px;
+  }
+
+  .banner__button-wrap {
+    margin-left: 74px;
+  }
+
+  .banner__image {
+    top: 200px;
+    left: 500px;
   }
 }

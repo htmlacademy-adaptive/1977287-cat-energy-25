@@ -13,7 +13,7 @@
 
 .program--slim::before {
   content: "";
-  background-image: url("/source/img/index/slim-cat-icon.png");
+  background-image: url("/source/img/index/slim-cat-icon.svg");
   width: 50px;
   height: 53px;
   display: block;
@@ -22,11 +22,12 @@
 
 .program--pro::before {
   content: "";
-  background-image: url("/source/img/index/pro-cat-icon.png");
+  background-image: url("/source/img/index/pro-cat-icon.svg");
   width: 67px;
   height: 50px;
   display: block;
   position: absolute;
+  left: 10px;
 }
 
 .program__title {
@@ -38,6 +39,10 @@
   margin-bottom: 30px;
   text-align: center;
   padding-top: 10px;
+}
+
+.program__title--pro {
+  text-align: right;
 }
 
 .program__description {
@@ -97,7 +102,7 @@
 
   .program--slim::after {
     content: "";
-    background-image: url("/source/img/index/slim-cat-icon-tablet.png");
+    background-image: url("/source/img/index/slim-cat-icon-tablet.svg");
     width: 200px;
     height: 211px;
     display: block;
@@ -108,7 +113,7 @@
 
   .program--pro::after {
     content: "";
-    background-image: url("/source/img/index/pro-cat-icon-tablet.png");
+    background-image: url("/source/img/index/pro-cat-icon-tablet.svg");
     width: 268px;
     height: 200px;
     display: block;
@@ -125,8 +130,14 @@
     padding-left: 50px;
   }
 
+  .program--margin {
+    margin: 0;
+  }
+
   .program__title {
     text-align: center;
+    padding: 0;
+    margin-bottom: 73px;
   }
 
   .program__description {
@@ -135,23 +146,23 @@
 
   .program--slim::after {
     content: "";
-    background-image: url("/source/img/index/slim-cat-icon-desktop.png");
+    background-image: url("/source/img/index/slim-cat-icon-desktop.svg");
     width: 100px;
     height: 106px;
     display: block;
     position: absolute;
     left: 50px;
-    top: 30px;
+    top: 40px;
   }
 
   .program--pro::after {
     content: "";
-    background-image: url("/source/img/index/pro-cat-icon-desktop.png");
+    background-image: url("/source/img/index/pro-cat-icon-desktop.svg");
     width: 134px;
     height: 100px;
     display: block;
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 32px;
+    top: 48px;
   }
 }

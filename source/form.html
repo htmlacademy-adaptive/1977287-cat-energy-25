@@ -11,19 +11,18 @@
 <body class="page__body">
   <div class="page__container">
   <header class="main-header">
-    <div class="main-header__logo-wrap">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/header/logo-mobile.png" alt="Логотип Cat Energy">
-    </a>
-    <a class="main-header__logo-small" href="index.html">
-      <img class="main-header__logo-image-small" src="img/header/logo2.png" width="101" height="18"
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+      <img class="main-header__logo-image" src="img/header/logo-mobile.svg" width="191" height="38"
         alt="Логотип Cat Energy">
+      </picture>
     </a>
-  </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item">
           <a class="site-list__site-link" href="index.html">
             Главная
           </a>
@@ -34,7 +33,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__site-link" href="#">
+          <a class="site-list__site-link site-list__site-link--current" href="#">
             Подбор программы
           </a>
         </li>
@@ -47,7 +46,8 @@
       <p class="filter__subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <div class="filter__wrapper">
-        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post" name="program-choice">
+        <form class="filter__form" action="https://echo.htmlacademy.ru/" method="post" name="program-choice">
+          <div class="filter__inputs-radio-wrap">
           <fieldset class="filter-inputs">
             <label class="filter-inputs__input-label"> ИМЯ:*
               <input class="filter-inputs__field filter-inputs__field--name" type="text" name="name" value="Барсик" required>
@@ -85,20 +85,23 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="owner-contacts">
+        </div>
+          <fieldset class="owner-contacts owner-contacts--margin">
             <legend class="owner-contacts__legend">Контактные данные (владельца кота)</legend>
+          <div class="owner-contacts__wrap">
             <label class="owner-contacts__input-label"> E-mail:*
               <input class="owner-contacts__field owner-contacts__field--email" type="email" name="e-mail" value="kuklachev@gmail.com" required>
             </label>
             <label class="owner-contacts__input-label">Телефон:*
               <input class="owner-contacts__field owner-contacts__field--tel" type="tel" name="tel" value="8 (960) 900-60-90" required>
             </label>
+          </div>
           </fieldset>
           <fieldset class="comments comments--margin">
             <legend class="comments__legend">Комментарий</legend>
             <textarea class="comments__field" name="comments">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="extra-products">
+          <fieldset class="extra-products extra-products--margin">
             <legend class="extra-products__legend">Дополнительно</legend>
             <ul class="extra-products__list">
               <li class="extra-products__item">
@@ -131,11 +134,13 @@
               </li>
             </ul>
           </fieldset>
+          <div class="filter__button-fields-wrap">
           <div class="form-button-wrapper">
             <button class="button button--form" type="submit">Отправить заявку</button>
           </div>
+          <span class="required-fields">* — Обязательные поля</span>
+        </div>
         </form>
-        <span class="required-fields">* — Обязательные поля</span>
       </div>
     </section>
     <section class="contacts contacts--margin contacts--catalog">
@@ -151,15 +156,18 @@
       </div>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map__wrapper">
-        <img class="map__image" src="img/map/map-mobile.jpg" width="320" height="362" alt="Как нас найти">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1652818342970!5m2!1sru!2sru"
+        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="index.html">
-        <img class="main-footer__logo-image-big" src="img/footer/footer-logo-cat-energy-big.png" width="128" height="24"
+        <img class="main-footer__logo-image-big" src="img/footer/footer-logo2.svg" width="128" height="24"
         alt="Логотип Cat Energy">
       </a>
       <div class="main-footer__social social">
@@ -202,7 +210,7 @@
   </footer>
 </div>
 
-
+<script src="/source/script.js"></script>
 </body>
 
 </html>

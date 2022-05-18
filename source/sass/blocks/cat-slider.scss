@@ -57,6 +57,18 @@
     left: 330px;
   }
 
+  .cat-slider__slider-toggle::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
   .cat-slider__initial-final {
     font-weight: 400;
     font-size: 20px;

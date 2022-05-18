@@ -3,6 +3,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .owner-contacts__legend {
@@ -14,7 +15,7 @@
 }
 
 .owner-contacts__input-label {
-  color: $special-dark-grey2;
+  color: $special-dark-grey;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -26,7 +27,7 @@
 }
 
 .owner-contacts__field {
-  color: $special-dark-grey2;
+  color: $special-dark-grey;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -39,8 +40,98 @@
 
 .owner-contacts__field--email {
   width: 190px;
+  background-image: url("/source/img/form/icon_email.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 17px;
 }
+
 
 .owner-contacts__field--tel {
   width: 176px;
+  background-image: url("/source/img/form/phone-icon.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-contacts--margin {
+    margin-bottom: 65px;
+  }
+
+  .owner-contacts__legend {
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  .owner-contacts__legend::before {
+    content: "";
+    background-color: $basic-green;
+    width: 30px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -70px;
+  }
+
+  .owner-contacts__legend::after {
+    content: "";
+    background-color: $basic-green;
+    width: 145px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 553px;
+  }
+
+  .owner-contacts__field {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-contacts__field--email {
+    width: 510px;
+  }
+
+  .owner-contacts__field--tel {
+    width: 495px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-contacts__legend::before {
+    width: 70px;
+    left: -120px;
+  }
+
+  .owner-contacts__legend::after {
+    width: 778px;
+    left: 550px;
+  }
+
+  .owner-contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .owner-contacts__input-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-contacts__field {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+
+  .owner-contacts__field--email {
+    width: 446px;
+  }
+
+  .owner-contacts__field--tel {
+    width: 432px;
+  }
 }

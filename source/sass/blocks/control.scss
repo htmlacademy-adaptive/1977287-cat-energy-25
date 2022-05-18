@@ -37,3 +37,26 @@
   border-radius: 50%;
   content: "";
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    padding-left: 60px;
+  }
+
+  .control__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .control__mark {
+    left: 0;
+    top: -6px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__field[type="radio"]:checked + .control__mark::before {
+    width: 18px;
+    height: 18px;
+  }
+}

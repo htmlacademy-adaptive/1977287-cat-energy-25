@@ -1,11 +1,26 @@
+.options {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .options {
+    padding: 0 30px;
+  }
+
+  .options--margin {
+    margin-top: 600px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .options {
+    padding: 0 110px;
     display: flex;
     justify-content: space-between;
   }
 
   .options--margin {
-    margin-top: 140px;
+    margin-top: 270px;
+    margin-bottom: 70px;
   }
 }

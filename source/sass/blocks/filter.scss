@@ -1,3 +1,6 @@
+.filter {
+  padding: 0 20px;
+}
 
 .filter__title {
   font-weight: 400;
@@ -13,4 +16,37 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    padding: 0 70px;
+  }
+
+  .filter__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .filter__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 350px;
+  }
+
+  .filter__button-fields-wrap {
+    display: flex;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    padding: 0 110px;
+  }
+
+  .filter__inputs-radio-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }

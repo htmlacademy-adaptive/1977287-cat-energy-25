@@ -1,7 +1,7 @@
 
 .example {
   background-color: $special-grey2;
-  padding: 25px 0;
+  padding: 25px 20px;
 }
 
 .example__title {
@@ -25,7 +25,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $white;
-    padding: 0;
+    padding: 0 30px;
   }
 
   .example__title {
@@ -33,7 +33,7 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    margin-top: 43px;
+    margin-top: 100px;
     margin-bottom: 63px;
   }
 
@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding: 0 110px 70px 110px;
+  }
+
   .example__description {
     max-width: 440px;
   }

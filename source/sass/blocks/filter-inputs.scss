@@ -2,6 +2,7 @@
 .filter-inputs {
   border: none;
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
 }
 
@@ -45,4 +46,43 @@
 .filter-inputs::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-inputs__field--name {
+    width: 567px;
+  }
+
+  .filter-inputs__field--weight {
+    width: 536px;
+  }
+
+  .filter-inputs__field--age {
+    width: 497px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-inputs__field {
+    padding: 10px 20px 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .filter-inputs__input-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .filter-inputs__field--name {
+    width: 466px;
+  }
+
+  .filter-inputs__field--weight {
+    width: 435px;
+  }
+
+  .filter-inputs__field--age {
+    width: 396px;
+  }
 }

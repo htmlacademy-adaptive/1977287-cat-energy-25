@@ -1,12 +1,10 @@
 .main-nav {
   position: relative;
-  width: 320px;
-  min-height: 198px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
+  top: -45px;
   right: 0;
   z-index: 2;
   display: block;
@@ -15,6 +13,14 @@
   cursor: pointer;
   border: none;
   background-color: $white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  right: 20px;
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: -30px;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -28,27 +34,29 @@
   box-shadow: 0 10px 0 0 $black, 0 20px 0 0 $black;
 }
 
-.main-nav--opened .main-nav__toggle {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $black;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(45deg);
+  box-shadow: none;
 }
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(-45deg);
+}
+
 
 .main-nav__list {
   list-style-type: none;
@@ -62,37 +70,29 @@
   right: 0;
   left: 0;
   z-index: 10;
-  min-height: 200px;
   background-color: $white;
 }
 
-.main-nav--nojs {
-  position: static;
-  min-height: 0;
-}
-
-@media (max-width: $mobile-width-only) {
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 440px;
+    height: 40px;
+    display: flex;
+    align-items: center;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--opened {
+    position: static;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 485px;
-  }
-
-  .main-nav--opened {
-    background-color: $basic-green;
   }
 }

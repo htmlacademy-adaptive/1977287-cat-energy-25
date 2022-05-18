@@ -3,6 +3,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .comments--margin {
@@ -17,16 +18,72 @@
 }
 
 .comments__field {
-  color: $special-dark-grey2;
+  color: $special-dark-grey;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
   resize: none;
   overflow: hidden;
-  width: 280px;
+  width: 250px;
   height: 150px;
   border: 1px solid $basic-grey;
-  padding: 9px 15px;
+  padding: 9px 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments__legend {
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  .comments__legend::before {
+    content: "";
+    background-color: $basic-green;
+    width: 30px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -70px;
+  }
+
+  .comments__legend::after {
+    content: "";
+    background-color: $basic-green;
+    width: 478px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+  }
+
+  .comments__field {
+    width: 590px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .comments--margin {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments__legend::before {
+    width: 70px;
+    left: -120px;
+  }
+
+  .comments__legend::after {
+    width: 1108px;
+    left: 220px;
+  }
+
+  .comments__field {
+    width: 1220px;
+  }
 }
