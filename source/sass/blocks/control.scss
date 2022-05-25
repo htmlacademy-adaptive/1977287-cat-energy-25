@@ -8,7 +8,7 @@
 .control__mark {
   position: absolute;
   left: 0;
-  top: -10px;
+  top: -8px;
   width: 30px;
   height: 30px;
   background-color: $white;
@@ -16,12 +16,24 @@
   border-radius: 50%;
 }
 
+.control__mark:hover {
+  border: 1px solid $special-grey3;
+}
+
+.control__mark:disabled {
+  opacity: 0.3;
+}
+
 .control__label {
   color: $special-dark-grey2;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.control__label:disabled {
+  opacity: 0.3;
 }
 
 .control__field[type="radio"]:checked + .control__mark::before {
@@ -44,7 +56,7 @@
   }
 
   .control__label {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
   }
 

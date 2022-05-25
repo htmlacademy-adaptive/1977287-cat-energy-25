@@ -7,14 +7,26 @@
 }
 
 .comments--margin {
+  margin-top: 7px;
   margin-bottom: 23px;
 }
 
 .comments__legend {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 26px;
   margin-bottom: 38px;
+}
+
+.comments__legend::after {
+  content: "";
+  background-color: $basic-green;
+  width: 158px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 142px;
 }
 
 .comments__field {
@@ -27,15 +39,16 @@
   resize: none;
   overflow: hidden;
   width: 250px;
-  height: 150px;
+  height: 130px;
   border: 1px solid $basic-grey;
-  padding: 9px 12px;
+  padding: 9px 15px;
 }
 
 @media (min-width: $tablet-width) {
   .comments__legend {
     font-size: 33px;
     line-height: 36px;
+    margin-bottom: 75px;
   }
 
   .comments__legend::before {
@@ -62,8 +75,9 @@
 
   .comments__field {
     width: 590px;
+    height: 153px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
   }
 

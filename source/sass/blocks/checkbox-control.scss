@@ -1,12 +1,16 @@
 
 .checkbox-control__label {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
   position: relative;
   display: block;
-  padding-left: 41px;
+  padding-left: 46px;
+}
+
+.checkbox-control__label:disabled {
+  opacity: 0.3;
 }
 
 .checkbox-control__mark {
@@ -14,7 +18,16 @@
   width: 26px;
   height: 26px;
   background-color: $white;
+  border: 1px solid $basic-grey;
+  margin-top: -5px;
+}
+
+.checkbox-control__mark:hover {
   border: 1px solid $special-grey;
+}
+
+.checkbox-control__mark:disabled {
+  opacity: 0.3;
 }
 
 .checkbox-control__input[type="checkbox"]:checked + .checkbox-control__mark::before {
@@ -34,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .checkbox-control__label {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     padding-left: 60px;
   }

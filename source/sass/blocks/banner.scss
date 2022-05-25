@@ -10,7 +10,8 @@
   @media (min-resolution: 2dppx) {
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("/source/img/index/index-background2x.jpg");
-    background-size: 640px 604px, 640px 604px;
+    background-size: 320px 302px, 320px 302px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -26,7 +27,7 @@
 }
 
 .banner__title {
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
@@ -36,12 +37,17 @@
 }
 
 .banner__slogan {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.banner__image-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .banner__button-wrap {
@@ -65,14 +71,16 @@
   .banner__image {
     position: absolute;
     z-index: -1;
-    left: 50px;
+    top: 260px;
+    left: 30px;
   }
 
   .banner__title {
     font-weight: 400;
-    font-size: 60px;
+    font-size: 55px;
     line-height: 60px;
     margin: 0;
+    padding-top: 60px;
     margin-bottom: 40px;
     max-width: 600px;
     text-align: left;
@@ -80,20 +88,13 @@
 
   .banner__slogan {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 20px;
     text-align: left;
   }
 
-  .banner__button {
-    display: inline-block;
-    width: 245px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin-left: 85px;
-  }
-
   .banner__button-wrap {
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
   }
@@ -112,27 +113,28 @@
     display: block;
     z-index: -1;
     position: absolute;
-    top: -108px;
+    top: -115px;
     right: 0;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("/source/img/index/index-background-desktop2x.jpg");
-      background-size: 1440px 1388px, 1440px 1388px;
+        url("/source/img/index/index-background-desktop2px.jpg");
+      background-size: 720px 694px, 720px 694px;
+      background-repeat: no-repeat, no-repeat;
     }
   }
 
 
   .banner__title {
-    font-size: 60px;
+    font-size: 56px;
     line-height: 60px;
-    padding: 115px 20px 0 72px;
+    padding: 112px 20px 0 72px;
     max-width: 450px;
   }
 
   .banner__slogan {
     padding-left: 72px;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
   }
 
   .banner__button-wrap {
@@ -140,7 +142,7 @@
   }
 
   .banner__image {
-    top: 200px;
-    left: 500px;
+    top: 30px;
+    left: 560px;
   }
 }

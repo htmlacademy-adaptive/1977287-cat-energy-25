@@ -31,12 +31,24 @@
   fill: $basic-green;
 }
 
+.social__item--vk-icon:active path {
+  fill: rgba(79, 209, 33, 0.35);
+}
+
 .social__item--youtube-icon:hover path {
   fill: $basic-green;
 }
 
+.social__item--youtube-icon:active {
+  fill: rgba(79, 209, 33, 0.35);
+}
+
 .social__item--telegram-icon:hover path {
   fill: $basic-green;
+}
+
+.social__item--telegram-icon:active {
+  fill: rgba(79, 209, 33, 0.35);
 }
 
 @media (min-width: $tablet-width) {
